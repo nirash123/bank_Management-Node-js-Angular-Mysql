@@ -1,0 +1,42 @@
+
+    <body>
+  
+        <div fxLayoutAlign="center center" fxFlexFill class="main-div"> 
+            <mat-card fxFlex="75">
+                <mat-toolbar color="primary"  fxLayoutAlign = "center center">Home Page</mat-toolbar>
+                <form>
+                    <table>
+
+                <tr> 
+                    <td><p fxLayoutAlign="left">Employee Name :          </p></td>
+                    <td><p>{{kong.emp_name}}</p></td>
+                </tr>
+                <tr>
+                    <td><p fxLayoutAlign="left">Employee Email Address : </p></td>
+                    <td><p>{{kong.emp_email}}</p></td>
+                </tr>
+                <tr>
+                    <td><p fxLayoutAlign="left">Bank Name :              </p></td>
+                    <p>{{kong2.bank.bank_name}} </p>
+                </tr>
+                <tr>
+                    <td><p fxLayoutAlign="left">Branch Name :            </p></td>
+                    <td><p>{{kong2.branch.branch_name}}</p></td>
+                </tr>
+                <tr>
+                    <td><p fxLayoutAlign="left">Employee Photo :         </p></td>
+                    <td><img [src]= 'kong.emp_photo' style="width: 100px; height: 100px; text-align: end;"> </td>
+                </tr>
+
+            
+                    </table>
+                    
+                    
+                    
+                    </form>
+            </mat-card>
+        </div>
+        <body>
+        
+
+

@@ -1,0 +1,19 @@
+body{
+ 
+    background: url(D:\Angular\project\src\assets\image\ima.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main-div mat-card{
+    padding: 0px;
+}
+
+.login-form {
+    padding: 20px;
+}
+tr{
+    padding: 10px;
+}

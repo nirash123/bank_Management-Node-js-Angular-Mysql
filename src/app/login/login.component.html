@@ -1,0 +1,30 @@
+<body>
+  
+<div fxLayoutAlign="center center" fxFlexFill class="main-div"> 
+  
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary"  fxLayoutAlign = "center center">Login Page</mat-toolbar>
+
+       <form class="example-form" fxLayoutAlign="stretch" [formGroup]="formLogin" (ngSubmit)="onSubmit()" fxLayout="column" class="login-form">
+        <mat-form-field appearance="outline">
+          <mat-label>Email:</mat-label>
+          <input  class="area-text"  formControlName="email" 
+          matInput placeholder="Enter Your Email" required>
+          <mat-error>!This field is mandatory.</mat-error>
+          <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+          <mat-label>Password:</mat-label>
+          <input type="password" formControlName="password" matInput placeholder="Enter Your Password">
+        
+          <mat-icon matSuffix>password</mat-icon>
+
+      </mat-form-field>
+            <button mat-raised-button type="submit"  value="">Login</button>
+            
+          
+        </form>
+    </mat-card>
+</div>
+<body>
